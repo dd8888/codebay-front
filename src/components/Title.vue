@@ -6,13 +6,18 @@
       class="mt-2 p-3"
     >
       <h2>A big title</h2>
-      <div class="d-block d-sm-none dropleft">
-        <b-dropdown id="dropdown-1" text="Home" class="m-md-2 w-25">
-          <b-dropdown-item>Home</b-dropdown-item>
-          <b-dropdown-item>Event</b-dropdown-item>
-          <b-dropdown-item>Support</b-dropdown-item>
-          <b-dropdown-item>Contact</b-dropdown-item>
-        </b-dropdown>
+      <div class="d-block d-sm-none">
+        <mdb-dropdown class="mb-1">
+          <mdb-dropdown-toggle slot="toggle" color="dark" size="sm"
+            >Navigation</mdb-dropdown-toggle
+          >
+          <mdb-dropdown-menu>
+            <mdb-dropdown-item>Home</mdb-dropdown-item>
+            <mdb-dropdown-item>Event</mdb-dropdown-item>
+            <mdb-dropdown-item>Support</mdb-dropdown-item>
+            <mdb-dropdown-item>Contact</mdb-dropdown-item>
+          </mdb-dropdown-menu>
+        </mdb-dropdown>
       </div>
       <b-navbar-nav class="ml-auto d-none d-sm-block">
         <b-navbar-nav>
@@ -28,8 +33,20 @@
 </template>
 
 <script>
+import {
+  mdbDropdown,
+  mdbDropdownItem,
+  mdbDropdownMenu,
+  mdbDropdownToggle
+} from "mdbvue";
 export default {
-  name: "Title"
+  name: "Title",
+  components: {
+    mdbDropdown,
+    mdbDropdownItem,
+    mdbDropdownMenu,
+    mdbDropdownToggle
+  }
 };
 </script>
 
