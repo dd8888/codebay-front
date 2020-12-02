@@ -61,7 +61,6 @@ export default {
   background: rgb(235, 162, 5);
   color: white;
   text-align: center;
-
   font: 14px Arial, sans-serif;
 }
 </style>

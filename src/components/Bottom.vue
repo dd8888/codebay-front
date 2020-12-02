@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-2 p-3 d-md-flex container">
+  <div class="mt-2 p-3 d-md-flex wrapper">
     <div class="d-lg-none col col-xs-2 mb-4">
       <h6>Quick Links</h6>
       <div>
@@ -26,7 +26,7 @@
         platea dictumst.
       </p>
     </div>
-    <div class="col">
+    <div class="col" style="text-align: center">
       <h6>Coming soon</h6>
       <img
         src="https://picsum.photos/450/350/?image=5"
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.wrapper {
   background-color: rgb(216, 216, 216);
 }
 a {

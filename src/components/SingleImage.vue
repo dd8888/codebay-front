@@ -1,10 +1,10 @@
 <template>
   <div class="p-1">
     <mdb-card class="mb-3">
-      <mdb-view hover cascade fluid>
+      <mdb-view hover cascade>
         <a href="#!">
           <mdb-card-image
-            class="p-sm-4 p-md-1"
+            class="p-sm-4 p-md-1 p-lg-3 p-xl-5"
             :src="src"
             alt="Card image cap"
             v-animateOnScroll="{

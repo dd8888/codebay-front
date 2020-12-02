@@ -5,7 +5,7 @@
     justify-content: space-between;"
       class="mt-2 p-3"
     >
-      <h2>A big title</h2>
+      <h2>Codebay</h2>
       <div class="d-block d-sm-none">
         <mdb-dropdown class="mb-1">
           <mdb-dropdown-toggle slot="toggle" color="dark" size="sm"
