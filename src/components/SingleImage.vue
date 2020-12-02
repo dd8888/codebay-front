@@ -4,7 +4,7 @@
       <mdb-view hover cascade fluid>
         <a href="#!">
           <mdb-card-image
-            class="p-xs-1 p-sm-3 p-lg-5 img-fluid"
+            class="p-sm-4 p-md-1"
             :src="src"
             alt="Card image cap"
             v-animateOnScroll="{

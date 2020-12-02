@@ -5,6 +5,7 @@
     <Header />
     <Images />
     <Bottom />
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Title from "./components/Title.vue";
 import Header from "./components/Header.vue";
 import Images from "./components/Images.vue";
 import Bottom from "./components/Bottom.vue";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
@@ -22,7 +24,8 @@ export default {
     Title,
     Header,
     Images,
-    Bottom
+    Bottom,
+    Footer
   }
 };
 </script>
