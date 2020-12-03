@@ -7,9 +7,6 @@
             class="p-sm-4 p-md-1 p-lg-3 p-xl-5"
             :src="src"
             alt="Card image cap"
-            v-animateOnScroll="{
-              animation: 'fadeIn'
-            }"
           ></mdb-card-image>
           <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
         </a>

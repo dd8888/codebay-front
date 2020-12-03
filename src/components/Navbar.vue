@@ -10,18 +10,34 @@
               size="xs"
               style="color: white;  
             text-shadow: 0 0 0 white;"
-              ><span class="numberCircle mr-2">4</span> 🛒</mdb-dropdown-toggle
-            >
+              ><span class="badge badge-danger mr-2">4</span>
+              <i class="fas fa-shopping-cart"></i
+            ></mdb-dropdown-toggle>
             <mdb-dropdown-menu>
-              <mdb-dropdown-item>Item 1</mdb-dropdown-item>
-              <mdb-dropdown-item>Item 2</mdb-dropdown-item>
-              <mdb-dropdown-item>Item 3</mdb-dropdown-item>
-              <mdb-dropdown-item>Item 4</mdb-dropdown-item>
+              <mdb-dropdown-item
+                >Item 1
+                <span style="float:right">{{ price1 }}</span></mdb-dropdown-item
+              >
+              <mdb-dropdown-item
+                >Item 2
+                <span style="float:right">{{ price2 }}</span></mdb-dropdown-item
+              ><mdb-dropdown-item
+                >Item 3
+                <span style="float:right">{{ price3 }}</span></mdb-dropdown-item
+              ><mdb-dropdown-item
+                >Item 4
+                <span style="float:right">{{ price4 }}</span></mdb-dropdown-item
+              >
+              <mdb-dropdown-item
+                ><a href="#" style="color:blue"
+                  >Proceed with the payment ></a
+                ></mdb-dropdown-item
+              >
             </mdb-dropdown-menu>
           </mdb-dropdown>
 
           <b-navbar-nav class="p-2">
-            <b-nav-item href="#">Profile</b-nav-item>
+            <b-nav-item href="#"><span class="fa fa-user"></span></b-nav-item>
           </b-navbar-nav>
           <b-nav-form class="p-2">
             <b-form-input
@@ -50,13 +66,27 @@ export default {
     mdbDropdownItem,
     mdbDropdownMenu,
     mdbDropdownToggle
+  },
+  data: function() {
+    return {
+      price1: "$" + this.getRandomPrice(),
+      price2: "$" + this.getRandomPrice(),
+      price3: "$" + this.getRandomPrice(),
+      price4: "$" + this.getRandomPrice()
+    };
+  },
+  methods: {
+    getRandomPrice: function() {
+      return Math.floor(Math.random() * (200 - 1) + 1) + ".00";
+    }
   }
 };
 </script>
 
 <style scoped>
 .numberCircle {
-  padding: 10px;
+  border-radius: 20%;
+  padding: 13px;
   position: relative;
   background: rgb(235, 162, 5);
   color: white;

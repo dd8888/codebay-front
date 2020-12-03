@@ -9,13 +9,13 @@
       class="img-fluid d-none d-sm-block"
     >
       <b-carousel-slide
-        img-src="https://picsum.photos/1024/580/?image=1"
+        img-src="https://picsum.photos/1024/580/?image=41"
       ></b-carousel-slide>
       <b-carousel-slide
-        img-src="https://picsum.photos/1024/580/?image=2"
+        img-src="https://picsum.photos/1024/580/?image=42"
       ></b-carousel-slide>
       <b-carousel-slide
-        img-src="https://picsum.photos/1024/580/?image=3"
+        img-src="https://picsum.photos/1024/580/?image=43"
       ></b-carousel-slide>
     </b-carousel>
     <p class="h5 mt-3">Intro copy headline</p>
